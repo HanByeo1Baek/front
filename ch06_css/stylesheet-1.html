@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 내부 스타일 시트 */
+        /* 
+        h1은 태그 선택자: h1태그 전부를 선택하여 스타일시트를 적용하겠다.
+        #222 <- 이렇게 적으면 알아서 #222222로 들어감
+        margin이랑 padding은 하나주면 전체 2개 이상부턴 시계방향으로 부여함
+        */
+        * { padding: 0; margin: 0; }
+        h1 { padding: 10px; background-color: #222; color: #fff; }
+        div { background-color: antiquewhite; margin-bottom: 30px; }
+        div#type-1 { padding: 20px 40px; }
+        div#type-2 { padding: 50px 40px 20px; }
+        div#type-3 { padding: 50px 40px 20px 10px; }
+        div#type-4 { padding: 50px 40px 0 0; }
+        /* padding-top, right, bottom, left <- 이렇게 사용하면 특정한 곳에 사용가능 */
+
+    </style>
+</head>
+<body>
+    <h1>stylesheet-1.html</h1>
+    <h1>레드향</h1>
+    <div id="type-1">1</div>
+    <div id="type-2">222 222 22 222 222 2 222 222 222 222 222 222 222 222 222 22 222 22 22222222222222222 222222222222222 222222222222222222 22222222222222</div>
+    <div id="type-3">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</div>
+    <div id="type-4">4 Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</div>
+</body>
+</html>
