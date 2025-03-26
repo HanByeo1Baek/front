@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h1 { color: brown !important; } /* !important가 붙으면 이걸로 적용됨 */
+        h2 { color: brown; font-weight: 100;}
+        h2 { color: red; } /* 이렇게 두번 사용하면 마지막 걸로 적용된다. 겹치는 것만 적용 */
+        .font-red { color: red; } /* 이렇게 부모에 적용하면 자식들까지 적용된다. */
+        .font-size-20 { font-size: 20px; }
+        .bg-green { background-color: green; }
+    </style>
+</head>
+<body>
+    <h2>cascading.html</h2>
+    <h1 style="color: green;">레드향1</h1> <!-- 인라인 스타일 inline style -->
+    <h1>레드향2</h1>
+    <div class="font-red font-size-20 bg-green">
+        <div>
+            <div>
+                <span style="background-color: yellow">3-depth div</span>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
